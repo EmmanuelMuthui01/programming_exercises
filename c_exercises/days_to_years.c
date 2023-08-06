@@ -14,7 +14,7 @@ int main(void)
 	scanf("%d", &days);
 
 	year = days / 365;
-	week = (days - (year * 365)) / 7;
+	week = (days - (year * 365)) / 7; /*or use weeks = (days % 365) / 7*/
 	days = days - ((year * 365) + (week * 7));
 
 	printf("YEAR(S): %d\n", year);
